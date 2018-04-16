@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="BroderickSftp:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="21d83be1-b8e4-42f3-8a32-39a46034dbb7" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="BroderickSftp" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Arquillian JUnit Test Class" />
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>not</find>
+      <find>getText</find>
+      <find>SmarTreeNode</find>
+      <find>NetworkQueueElement</find>
+      <find>buttonDelete</find>
+      <find />
+      <find>connectionsP</find>
+      <find>100</find>
+      <find>SmarTree</find>
+      <find>it.extraweb.smartree.smartree.node.</find>
+      <find>it.extraweb.smartree.smartree.node.CleverTreeNode</find>
+      <find>it.extraweb.smartree.smartree.tree.CleverTree</find>
+      <find>ML</find>
+      <find>&quot;;</find>
+      <find>=</find>
+      <find>\\</find>
+      <find>data/</find>
+      <find>main</find>
+      <find>/</find>
+      <find>&quot;data&quot;</find>
+      <find>\u94fe\u63a5\u5e93</find>
+      <find>PWD_VECTOR</find>
+      <find>localpart</find>
+      <find>rawname</find>
+      <find>Sftp</find>
+      <find>this.tm</find>
+      <find>tm</find>
+      <find>rename</find>
+      <find>inputConnectionFolderPassword</find>
+      <find>credits</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>toolBar</replace>
+      <replace>NetworkElementQueue</replace>
+      <replace>deleteButton</replace>
+      <replace>CleverTreeNode</replace>
+      <replace>CleverTree</replace>
+      <replace>&quot;;</replace>
+      <replace />
+      <replace>/</replace>
+      <replace>\u5de5\u4f5c\u533a</replace>
+      <replace>bkLabOrgHtml</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/tablemodel/RemoteFileSystemTableModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/widget/ColorChooserButton.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/widget/InputFileChooser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/widget/OverlayImageIcon.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/InteractiveLogic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/hint/HintTextFieldUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/hint/HintPasswordFieldUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/drop/SftpTransferHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/dialog/DeleteDialog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/dialog/EnterSomethingDialog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/dialog/NewFolderDialog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/dialog/NewGroupDialog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/dialog/RenameDialog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/utils/WindowsShortcut.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/utils/ViewUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/utils/ExceptionManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/utils/DataUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/utils/ConnectionNodesComparator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/dto/NetworkQueueAsynchRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/dto/NetworkQueueElement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/core/connection/ConnectionManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/core/connection/AdvancedVerifier.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/configuration/DataPath.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/clevertree/renderer/SmarTreeCellRenderer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/clevertree/node/CleverTreeNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/clevertree/exception/BadPathException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/clevertree/exception/DuplicatedNodeException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/clevertree/exception/PermissionDeniedException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/clevertree/exception/SecurityException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/clevertree/exception/SmarTreeException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/clevertree/dto/CleverTreeDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/clevertree/dto/NodeProperty.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/configuration/Settings.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/widget/VT100TextArea.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/question7.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/org/bklab/sftp/view/widget/VT100TextAreaTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/panel/sftp/LocalFileSystemPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/org/bklab/sftp/locale/broderick_zh_CN.properties" />
+        <option value="$PROJECT_DIR$/conf/settings.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/clevertree/dto/SecurityData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/clevertree/security/SecurityHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/clevertree/tree/CleverTree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/core/Broderick.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/dialog/NewConnectionDialog.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/bklab/sftp/ColorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/panel/SftpPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/panel/SshPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/dialog/AboutDialog.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/bklab/sftp/SftpTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/bklab/sftp/locale/i18n.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="92" />
+    <option name="y" value="65" />
+    <option name="width" value="1656" />
+    <option name="height" value="964" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="BroderickSftp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BroderickSftp" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="brodericksftp" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="replace&#9;ACTION&#9;Replace&#10;Command&#9;FILE&#9;file://E:/Broderick SFTP/BroderickSftp/src/main/java/org/bklab/sftp/view/panel/ssh/CommandPanel.java" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/BroderickSftp_jar" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15234613" />
+    <property name="project.structure.side.proportion" value="0.37446198" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.bklab.sftp.view.widget" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.bklab.sftp" />
+      <recent name="ch.ethz.ssh2.packets" />
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Broderick SFTP\BroderickSftp" />
+      <recent name="E:\Broderick SFTP\BroderickSftp\src\main\resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Broderick SFTP\BroderickSftp\src\main\resources" />
+      <recent name="E:\Broderick SFTP\BroderickSftp\data\img" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.bklab.sftp.view.renderer" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.SftpTest.loginRemoteSftpServer">
+    <configuration name="Broderick" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files (x86)/Java/jdk-9" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="org.bklab.sftp.core.Broderick" />
+      <module name="BroderickSftp" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bklab.sftp.configuration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="ColorTest.Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BroderickSftp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bklab.sftp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.bklab.sftp" />
+      <option name="MAIN_CLASS_NAME" value="org.bklab.sftp.ColorTest" />
+      <option name="METHOD_NAME" value="Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="SftpTest.loginRemoteSftpServer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BroderickSftp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bklab.sftp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.bklab.sftp" />
+      <option name="MAIN_CLASS_NAME" value="org.bklab.sftp.SftpTest" />
+      <option name="METHOD_NAME" value="loginRemoteSftpServer" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="SftpTest.testEncrypt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BroderickSftp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bklab.sftp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.bklab.sftp" />
+      <option name="MAIN_CLASS_NAME" value="org.bklab.sftp.SftpTest" />
+      <option name="METHOD_NAME" value="testEncrypt" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="SftpTest.testIsWindows" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BroderickSftp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bklab.sftp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.bklab.sftp" />
+      <option name="MAIN_CLASS_NAME" value="org.bklab.sftp.SftpTest" />
+      <option name="METHOD_NAME" value="testIsWindows" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Broderick" />
+      <item itemvalue="JUnit.SftpTest.testEncrypt" />
+      <item itemvalue="JUnit.ColorTest.Test" />
+      <item itemvalue="JUnit.SftpTest.testIsWindows" />
+      <item itemvalue="JUnit.SftpTest.loginRemoteSftpServer" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SftpTest.loginRemoteSftpServer" />
+        <item itemvalue="JUnit.SftpTest.testIsWindows" />
+        <item itemvalue="Application.Broderick" />
+        <item itemvalue="JUnit.ColorTest.Test" />
+        <item itemvalue="JUnit.SftpTest.testEncrypt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="21d83be1-b8e4-42f3-8a32-39a46034dbb7" name="Default" comment="" />
+      <created>1518312292517</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1518312292517</updated>
+      <workItem from="1518312296506" duration="18167000" />
+      <workItem from="1518333267529" duration="7932000" />
+      <workItem from="1518397423146" duration="1672000" />
+      <workItem from="1518399328139" duration="16395000" />
+      <workItem from="1518484393636" duration="10100000" />
+      <workItem from="1518496918464" duration="946000" />
+      <workItem from="1518497878190" duration="4138000" />
+      <workItem from="1518502603200" duration="11298000" />
+      <workItem from="1518522016561" duration="2918000" />
+      <workItem from="1518570187275" duration="24151000" />
+      <workItem from="1519630532740" duration="6126000" />
+      <workItem from="1519693150137" duration="4917000" />
+      <workItem from="1519698131971" duration="22136000" />
+      <workItem from="1519721434292" duration="926000" />
+      <workItem from="1519722367270" duration="1351000" />
+      <workItem from="1519780306633" duration="13908000" />
+      <workItem from="1519876531490" duration="13459000" />
+      <workItem from="1519894298348" duration="939000" />
+      <workItem from="1520822904022" duration="690000" />
+      <workItem from="1521084639342" duration="2745000" />
+      <workItem from="1521163777164" duration="606000" />
+      <workItem from="1521613657467" duration="7353000" />
+      <workItem from="1521680579665" duration="3918000" />
+      <workItem from="1521695484257" duration="2452000" />
+      <workItem from="1521768034225" duration="599000" />
+      <workItem from="1522121792894" duration="662000" />
+      <workItem from="1522132961914" duration="5000" />
+      <workItem from="1522205169887" duration="6548000" />
+      <workItem from="1522288513339" duration="2112000" />
+      <workItem from="1522375695652" duration="2131000" />
+      <workItem from="1522379705607" duration="3326000" />
+      <workItem from="1522638812226" duration="1622000" />
+      <workItem from="1522726413444" duration="632000" />
+      <workItem from="1522736655608" duration="640000" />
+      <workItem from="1523157315648" duration="10530000" />
+      <workItem from="1523263307214" duration="6482000" />
+      <workItem from="1523325137458" duration="15875000" />
+      <workItem from="1523364456056" duration="7737000" />
+      <workItem from="1523415737962" duration="1785000" />
+      <workItem from="1523417731811" duration="1574000" />
+      <workItem from="1523449747502" duration="5223000" />
+      <workItem from="1523542644950" duration="2427000" />
+      <workItem from="1523588188275" duration="4576000" />
+      <workItem from="1523597833454" duration="10180000" />
+      <workItem from="1523664570646" duration="12743000" />
+      <workItem from="1523685169017" duration="2629000" />
+      <workItem from="1523697733854" duration="654000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="SftpTest_testEncrypt - 2018.04.11 at 21h 01m 04s.xml">
+      <configuration name="SftpTest.testEncrypt" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ColorTest_Test - 2018.04.13 at 15h 12m 58s.xml">
+      <configuration name="ColorTest.Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ColorTest_Test - 2018.04.13 at 15h 14m 16s.xml">
+      <configuration name="ColorTest.Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SftpTest_testIsWindows - 2018.04.14 at 11h 14m 43s.xml">
+      <configuration name="SftpTest.testIsWindows" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SftpTest_testIsWindows - 2018.04.14 at 11h 17m 56s.xml">
+      <configuration name="SftpTest.testIsWindows" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SftpTest_testIsWindows - 2018.04.14 at 11h 19m 23s.xml">
+      <configuration name="SftpTest.testIsWindows" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SftpTest_testIsWindows - 2018.04.14 at 11h 21m 17s.xml">
+      <configuration name="SftpTest.testIsWindows" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SftpTest_testIsWindows - 2018.04.14 at 11h 21m 26s.xml">
+      <configuration name="SftpTest.testIsWindows" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SftpTest_testIsWindows - 2018.04.14 at 11h 25m 30s.xml">
+      <configuration name="SftpTest.testIsWindows" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SftpTest_loginRemoteSftpServer - 2018.04.14 at 11h 35m 54s.xml">
+      <configuration name="SftpTest.loginRemoteSftpServer" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="279935000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="92" y="65" width="1656" height="964" extended-state="0" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50364584" side_tool="true" weight="0.3252376" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49895832" weight="0.24561404" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2597561" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" weight="0.25098297" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34635693" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24947916" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Remote Host" order="4" weight="0.32987806" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49635416" weight="0.32077765" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.48363253" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/bklab/clevertree/tree/CleverTree.java</url>
+          <line>81</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="javascript-exception">
+          <properties />
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="19" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$PROJECT_DIR$/lib/org.bklab.ssh2.jar!/org/bklab/ssh2/sftp/OpenFlags.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="20" column="64" lean-forward="true" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/org.bklab.ssh2.jar!/org/bklab/ssh2/sftp/AttribFlags.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/org.bklab.ssh2.jar!/org/bklab/ssh2/transport/TransportConnection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1425">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/org.bklab.ssh2.jar!/org/bklab/ssh2/sftp/AttribBits.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/org.bklab.ssh2.jar!/org/bklab/ssh2/channel/Channel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-426">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/org.bklab.ssh2.jar!/org/bklab/ssh2/Session.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="121" column="16" selection-start-line="121" selection-start-column="16" selection-end-line="121" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk-9/lib/src.zip!/java.base/java/io/InputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="69" column="24" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/org.bklab.ssh2.jar!/org/bklab/ssh2/SCPClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="262" column="38" lean-forward="true" selection-start-line="262" selection-start-column="38" selection-end-line="262" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/dialog/RenameDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/panel/sftp/NetworkQueuePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk-9/lib/src.zip!/java.desktop/javax/swing/AbstractButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="1008" column="16" selection-start-line="1008" selection-start-column="16" selection-end-line="1008" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/panel/sftp/RemoteFileSystemPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="175" column="14" lean-forward="true" selection-start-line="175" selection-start-column="14" selection-end-line="175" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/org.bklab.ssh2.jar!/org/bklab/ssh2/packets/TypesWriter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="126" column="40" lean-forward="true" selection-start-line="126" selection-start-column="40" selection-end-line="126" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/org.bklab.ssh2.jar!/org/bklab/ssh2/sftp/Packet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/bklab/clevertree/dto/SecurityData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk-9/lib/src.zip!/java.base/java/util/Base64.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="313" column="22" selection-start-line="313" selection-start-column="22" selection-end-line="313" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/bklab/clevertree/security/SecurityHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk-9/lib/src.zip!/java.desktop/javax/swing/JOptionPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="644" column="23" selection-start-line="644" selection-start-column="23" selection-end-line="644" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk-9/lib/src.zip!/java.base/java/util/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="1011" column="18" selection-start-line="1011" selection-start-column="18" selection-end-line="1011" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/bklab/sftp/configuration/Settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/panel/ConnectionsPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1925">
+          <caret line="110" column="11" selection-start-line="110" selection-start-column="11" selection-end-line="110" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk-9/lib/src.zip!/java.desktop/java/awt/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="3258" column="16" selection-start-line="3258" selection-start-column="16" selection-end-line="3258" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/settings.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/bklab/sftp/ColorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk-9/lib/src.zip!/java.desktop/javax/swing/JColorChooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="134" column="5" lean-forward="true" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/widget/ColorChooserButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225">
+          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/dialog/NewConnectionDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="183" column="69" selection-start-line="183" selection-start-column="69" selection-end-line="183" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/widget/InputFileChooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="54" column="9" lean-forward="true" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/bklab/sftp/core/Broderick.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5525">
+          <caret line="255" column="45" selection-start-line="255" selection-start-column="45" selection-end-line="255" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk-9/lib/src.zip!/java.desktop/javax/swing/JToggleButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk-9/lib/src.zip!/java.desktop/java/awt/Desktop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="91" column="13" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/renderer/LocalFileCellRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/bklab/sftp/dto/NetworkQueueElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk-9/lib/src.zip!/java.desktop/javax/swing/table/DefaultTableCellRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/renderer/NetworkQueueCellRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/bklab/sftp/configuration/DataPath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="167" column="31" selection-start-line="167" selection-start-column="31" selection-end-line="167" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk-9/lib/src.zip!/java.desktop/javax/swing/JComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="4386" column="62" lean-forward="true" selection-start-line="4386" selection-start-column="62" selection-end-line="4386" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/widget/VT100TextArea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13883">
+          <caret line="58" column="14" lean-forward="true" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/InteractiveLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1225">
+          <caret line="55" column="1" lean-forward="true" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk-9/lib/src.zip!/java.base/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="794" column="29" selection-start-line="794" selection-start-column="29" selection-end-line="794" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/panel/ssh/CommandPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="116" column="31" lean-forward="true" selection-start-line="116" selection-start-column="31" selection-end-line="116" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/dialog/AboutDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/panel/SshPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-281">
+          <caret line="232" column="9" lean-forward="true" selection-start-line="232" selection-start-column="9" selection-end-line="232" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/data/bklab.org.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/panel/sftp/LocalFileSystemPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1450">
+          <caret line="83" column="29" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/bklab/sftp/view/panel/SftpPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/org.bklab.ssh2.jar!/org/bklab/ssh2/SFTPv3Client.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14050">
+          <caret line="580" column="31" selection-start-line="580" selection-start-column="31" selection-end-line="580" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/bklab/sftp/SftpTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="54" column="28" lean-forward="true" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/bklab/sftp/locale/i18n.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="54" column="93" selection-start-line="54" selection-start-column="93" selection-end-line="54" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArquillianSettingsConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20286086" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>BroderickSftp:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.37446198" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.37446198" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>org.bklab.ssh2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.37446198" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>9</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.37446198" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>BroderickSftp</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.37446198" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>org.bklab.ssh2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.37446198" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="0dfd24e9-9bc0-4748-80bf-c8e90e7cccbb" name="Broderick ECS(Qingdao)" url="http://broderick.cn">
+        <fileTransfer host="broderick.cn" port="62" privateKey="E:\Broderick_ECS_Qingdao.ppk" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="62" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

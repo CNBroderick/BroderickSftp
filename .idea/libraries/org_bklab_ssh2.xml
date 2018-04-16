@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="org.bklab.ssh2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/org.bklab.ssh2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_brodericksftp" default="compile.module.brodericksftp">
+  <dirname property="module.brodericksftp.basedir" file="${ant.file.module_brodericksftp}"/>
+  
+  <property name="module.jdk.home.brodericksftp" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.brodericksftp" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.brodericksftp" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.brodericksftp" value="-encoding UTF-8 -source 9 -target 1.9 ${compiler.args}"/>
+  
+  <property name="brodericksftp.output.dir" value="${module.brodericksftp.basedir}/target/classes"/>
+  <property name="brodericksftp.testoutput.dir" value="${module.brodericksftp.basedir}/target/test-classes"/>
+  
+  <path id="brodericksftp.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="brodericksftp.module.production.classpath">
+    <path refid="${module.jdk.classpath.brodericksftp}"/>
+    <path refid="library.maven:_commons-io:commons-io:2.6.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-lang3:3.7.classpath"/>
+    <path refid="library.maven:_dom4j:dom4j:1.6.1.classpath"/>
+    <path refid="library.maven:_xml-apis:xml-apis:1.0.b2.classpath"/>
+    <path refid="library.maven:_com.miglayout:miglayout-swing:5.0.classpath"/>
+    <path refid="library.maven:_com.miglayout:miglayout-core:5.0.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian:arquillian-testng:1.0.0.alpha5.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian:arquillian-impl-base:1.0.0.alpha5.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian:arquillian-api:1.0.0.alpha5.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-api:0.1.4.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian:arquillian-spi:1.0.0.alpha5.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap:shrinkwrap-api:1.0.0-alpha-12.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap:shrinkwrap-impl-base:1.0.0-alpha-12.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap:shrinkwrap-spi:1.0.0-alpha-12.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api:1.0.0-alpha-12.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api-maven:1.0.0-alpha-12.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-impl-maven:1.0.0-alpha-12.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-api:1.8.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-util:1.8.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-connector-wagon:1.8.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-spi:1.8.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-container-default:1.5.5.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-classworlds:2.2.2.classpath"/>
+    <path refid="library.maven:_org.apache.xbean:xbean-reflect:3.4.classpath"/>
+    <path refid="library.maven:_log4j:log4j:1.2.12.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging-api:1.1.classpath"/>
+    <path refid="library.maven:_com.google.collections:google-collections:1.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-aether-provider:3.0.1.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-model:3.0.1.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-model-builder:3.0.1.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-repository-metadata:3.0.1.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-impl:1.8.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-component-annotations:1.5.5.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-utils:2.0.4.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-settings-builder:3.0.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-interpolation:1.14.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-settings:3.0.1.classpath"/>
+    <path refid="library.maven:_org.sonatype.plexus:plexus-sec-dispatcher:1.3.classpath"/>
+    <path refid="library.maven:_org.sonatype.plexus:plexus-cipher:1.4.classpath"/>
+    <path refid="library.maven:_org.apache.maven.wagon:wagon-provider-api:1.0-beta-7.classpath"/>
+    <path refid="library.maven:_org.apache.maven.wagon:wagon-file:1.0-beta-7.classpath"/>
+    <path refid="library.maven:_org.apache.maven.wagon:wagon-http-lightweight:1.0-beta-7.classpath"/>
+    <path refid="library.maven:_org.apache.maven.wagon:wagon-http-shared:1.0-beta-7.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.1.1.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.container:undertow-embedded:1.0.0.alpha2.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.container:shrinkwrap-container-undertow:1.0.0.alpha2.classpath"/>
+    <path refid="library.maven:_io.undertow:undertow-core:1.0.0.cr5.classpath"/>
+    <path refid="library.maven:_org.jboss.logging:jboss-logging:3.1.4.ga.classpath"/>
+    <path refid="library.maven:_org.jboss.xnio:xnio-api:3.2.0.final.classpath"/>
+    <path refid="library.maven:_io.undertow:undertow-servlet:1.0.0.cr5.classpath"/>
+    <path refid="library.maven:_org.jboss.spec.javax.servlet:jboss-servlet-api_3.1_spec:1.0.0.final.classpath"/>
+    <path refid="library.maven:_org.jboss.spec.javax.annotation:jboss-annotations-api_1.2_spec:1.0.0.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.container:arquillian-container-spi:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.core:arquillian-core-spi:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.core:arquillian-core-api:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.config:arquillian-config-api:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.config:arquillian-config-impl-base:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-spi:2.0.0-alpha-3.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-api-base:2.0.0-alpha-3.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.container:arquillian-container-test-spi:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.container:arquillian-container-test-api:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.testenricher:arquillian-testenricher-initialcontext:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.junit:arquillian-junit-core:1.2.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.test:arquillian-test-spi:1.2.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.test:arquillian-test-api:1.2.1.final.classpath"/>
+    <path refid="library.org,bklab.ssh2.classpath"/>
+  </path>
+  
+  <path id="brodericksftp.runtime.production.module.classpath">
+    <pathelement location="${brodericksftp.output.dir}"/>
+    <path refid="library.maven:_commons-io:commons-io:2.6.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-lang3:3.7.classpath"/>
+    <path refid="library.maven:_dom4j:dom4j:1.6.1.classpath"/>
+    <path refid="library.maven:_xml-apis:xml-apis:1.0.b2.classpath"/>
+    <path refid="library.maven:_com.miglayout:miglayout-swing:5.0.classpath"/>
+    <path refid="library.maven:_com.miglayout:miglayout-core:5.0.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian:arquillian-testng:1.0.0.alpha5.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian:arquillian-impl-base:1.0.0.alpha5.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian:arquillian-api:1.0.0.alpha5.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-api:0.1.4.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian:arquillian-spi:1.0.0.alpha5.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap:shrinkwrap-api:1.0.0-alpha-12.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap:shrinkwrap-impl-base:1.0.0-alpha-12.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap:shrinkwrap-spi:1.0.0-alpha-12.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api:1.0.0-alpha-12.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api-maven:1.0.0-alpha-12.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-impl-maven:1.0.0-alpha-12.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-api:1.8.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-util:1.8.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-connector-wagon:1.8.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-spi:1.8.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-container-default:1.5.5.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-classworlds:2.2.2.classpath"/>
+    <path refid="library.maven:_org.apache.xbean:xbean-reflect:3.4.classpath"/>
+    <path refid="library.maven:_log4j:log4j:1.2.12.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging-api:1.1.classpath"/>
+    <path refid="library.maven:_com.google.collections:google-collections:1.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-aether-provider:3.0.1.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-model:3.0.1.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-model-builder:3.0.1.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-repository-metadata:3.0.1.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-impl:1.8.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-component-annotations:1.5.5.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-utils:2.0.4.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-settings-builder:3.0.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-interpolation:1.14.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-settings:3.0.1.classpath"/>
+    <path refid="library.maven:_org.sonatype.plexus:plexus-sec-dispatcher:1.3.classpath"/>
+    <path refid="library.maven:_org.sonatype.plexus:plexus-cipher:1.4.classpath"/>
+    <path refid="library.maven:_org.apache.maven.wagon:wagon-provider-api:1.0-beta-7.classpath"/>
+    <path refid="library.maven:_org.apache.maven.wagon:wagon-file:1.0-beta-7.classpath"/>
+    <path refid="library.maven:_org.apache.maven.wagon:wagon-http-lightweight:1.0-beta-7.classpath"/>
+    <path refid="library.maven:_org.apache.maven.wagon:wagon-http-shared:1.0-beta-7.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.1.1.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.container:undertow-embedded:1.0.0.alpha2.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.container:shrinkwrap-container-undertow:1.0.0.alpha2.classpath"/>
+    <path refid="library.maven:_io.undertow:undertow-core:1.0.0.cr5.classpath"/>
+    <path refid="library.maven:_org.jboss.logging:jboss-logging:3.1.4.ga.classpath"/>
+    <path refid="library.maven:_org.jboss.xnio:xnio-api:3.2.0.final.classpath"/>
+    <path refid="library.maven:_org.jboss.xnio:xnio-nio:3.2.0.final.classpath"/>
+    <path refid="library.maven:_io.undertow:undertow-servlet:1.0.0.cr5.classpath"/>
+    <path refid="library.maven:_org.jboss.spec.javax.servlet:jboss-servlet-api_3.1_spec:1.0.0.final.classpath"/>
+    <path refid="library.maven:_org.jboss.spec.javax.annotation:jboss-annotations-api_1.2_spec:1.0.0.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.container:arquillian-container-spi:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.core:arquillian-core-spi:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.core:arquillian-core-api:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.config:arquillian-config-api:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.config:arquillian-config-impl-base:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-spi:2.0.0-alpha-3.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-api-base:2.0.0-alpha-3.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.container:arquillian-container-test-spi:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.container:arquillian-container-test-api:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.testenricher:arquillian-testenricher-initialcontext:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.junit:arquillian-junit-core:1.2.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.test:arquillian-test-spi:1.2.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.test:arquillian-test-api:1.2.1.final.classpath"/>
+    <path refid="library.org,bklab.ssh2.classpath"/>
+  </path>
+  
+  <path id="brodericksftp.module.classpath">
+    <path refid="${module.jdk.classpath.brodericksftp}"/>
+    <pathelement location="${brodericksftp.output.dir}"/>
+    <path refid="library.maven:_commons-io:commons-io:2.6.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-lang3:3.7.classpath"/>
+    <path refid="library.maven:_dom4j:dom4j:1.6.1.classpath"/>
+    <path refid="library.maven:_xml-apis:xml-apis:1.0.b2.classpath"/>
+    <path refid="library.maven:_com.miglayout:miglayout-swing:5.0.classpath"/>
+    <path refid="library.maven:_com.miglayout:miglayout-core:5.0.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian:arquillian-testng:1.0.0.alpha5.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian:arquillian-impl-base:1.0.0.alpha5.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian:arquillian-api:1.0.0.alpha5.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-api:0.1.4.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian:arquillian-spi:1.0.0.alpha5.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap:shrinkwrap-api:1.0.0-alpha-12.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap:shrinkwrap-impl-base:1.0.0-alpha-12.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap:shrinkwrap-spi:1.0.0-alpha-12.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api:1.0.0-alpha-12.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api-maven:1.0.0-alpha-12.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-impl-maven:1.0.0-alpha-12.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-api:1.8.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-util:1.8.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-connector-wagon:1.8.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-spi:1.8.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-container-default:1.5.5.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-classworlds:2.2.2.classpath"/>
+    <path refid="library.maven:_org.apache.xbean:xbean-reflect:3.4.classpath"/>
+    <path refid="library.maven:_log4j:log4j:1.2.12.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging-api:1.1.classpath"/>
+    <path refid="library.maven:_com.google.collections:google-collections:1.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-aether-provider:3.0.1.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-model:3.0.1.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-model-builder:3.0.1.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-repository-metadata:3.0.1.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-impl:1.8.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-component-annotations:1.5.5.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-utils:2.0.4.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-settings-builder:3.0.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-interpolation:1.14.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-settings:3.0.1.classpath"/>
+    <path refid="library.maven:_org.sonatype.plexus:plexus-sec-dispatcher:1.3.classpath"/>
+    <path refid="library.maven:_org.sonatype.plexus:plexus-cipher:1.4.classpath"/>
+    <path refid="library.maven:_org.apache.maven.wagon:wagon-provider-api:1.0-beta-7.classpath"/>
+    <path refid="library.maven:_org.apache.maven.wagon:wagon-file:1.0-beta-7.classpath"/>
+    <path refid="library.maven:_org.apache.maven.wagon:wagon-http-lightweight:1.0-beta-7.classpath"/>
+    <path refid="library.maven:_org.apache.maven.wagon:wagon-http-shared:1.0-beta-7.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.1.1.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.container:undertow-embedded:1.0.0.alpha2.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.container:shrinkwrap-container-undertow:1.0.0.alpha2.classpath"/>
+    <path refid="library.maven:_io.undertow:undertow-core:1.0.0.cr5.classpath"/>
+    <path refid="library.maven:_org.jboss.logging:jboss-logging:3.1.4.ga.classpath"/>
+    <path refid="library.maven:_org.jboss.xnio:xnio-api:3.2.0.final.classpath"/>
+    <path refid="library.maven:_org.jboss.xnio:xnio-nio:3.2.0.final.classpath"/>
+    <path refid="library.maven:_io.undertow:undertow-servlet:1.0.0.cr5.classpath"/>
+    <path refid="library.maven:_org.jboss.spec.javax.servlet:jboss-servlet-api_3.1_spec:1.0.0.final.classpath"/>
+    <path refid="library.maven:_org.jboss.spec.javax.annotation:jboss-annotations-api_1.2_spec:1.0.0.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.container:arquillian-container-spi:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.core:arquillian-core-spi:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.core:arquillian-core-api:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.config:arquillian-config-api:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.config:arquillian-config-impl-base:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-spi:2.0.0-alpha-3.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-api-base:2.0.0-alpha-3.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.container:arquillian-container-test-spi:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.container:arquillian-container-test-api:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.testenricher:arquillian-testenricher-initialcontext:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.junit:arquillian-junit-core:1.2.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.test:arquillian-test-spi:1.2.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.test:arquillian-test-api:1.2.1.final.classpath"/>
+    <path refid="library.maven:_junit:junit:4.11.classpath"/>
+    <path refid="library.maven:_org.hamcrest:hamcrest-core:1.3.classpath"/>
+    <path refid="library.org,bklab.ssh2.classpath"/>
+  </path>
+  
+  <path id="brodericksftp.runtime.module.classpath">
+    <pathelement location="${brodericksftp.testoutput.dir}"/>
+    <pathelement location="${brodericksftp.output.dir}"/>
+    <path refid="library.maven:_commons-io:commons-io:2.6.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-lang3:3.7.classpath"/>
+    <path refid="library.maven:_dom4j:dom4j:1.6.1.classpath"/>
+    <path refid="library.maven:_xml-apis:xml-apis:1.0.b2.classpath"/>
+    <path refid="library.maven:_com.miglayout:miglayout-swing:5.0.classpath"/>
+    <path refid="library.maven:_com.miglayout:miglayout-core:5.0.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian:arquillian-testng:1.0.0.alpha5.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian:arquillian-impl-base:1.0.0.alpha5.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian:arquillian-api:1.0.0.alpha5.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-api:0.1.4.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian:arquillian-spi:1.0.0.alpha5.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap:shrinkwrap-api:1.0.0-alpha-12.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap:shrinkwrap-impl-base:1.0.0-alpha-12.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap:shrinkwrap-spi:1.0.0-alpha-12.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api:1.0.0-alpha-12.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api-maven:1.0.0-alpha-12.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-impl-maven:1.0.0-alpha-12.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-api:1.8.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-util:1.8.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-connector-wagon:1.8.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-spi:1.8.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-container-default:1.5.5.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-classworlds:2.2.2.classpath"/>
+    <path refid="library.maven:_org.apache.xbean:xbean-reflect:3.4.classpath"/>
+    <path refid="library.maven:_log4j:log4j:1.2.12.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging-api:1.1.classpath"/>
+    <path refid="library.maven:_com.google.collections:google-collections:1.0.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-aether-provider:3.0.1.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-model:3.0.1.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-model-builder:3.0.1.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-repository-metadata:3.0.1.classpath"/>
+    <path refid="library.maven:_org.sonatype.aether:aether-impl:1.8.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-component-annotations:1.5.5.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-utils:2.0.4.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-settings-builder:3.0.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-interpolation:1.14.classpath"/>
+    <path refid="library.maven:_org.apache.maven:maven-settings:3.0.1.classpath"/>
+    <path refid="library.maven:_org.sonatype.plexus:plexus-sec-dispatcher:1.3.classpath"/>
+    <path refid="library.maven:_org.sonatype.plexus:plexus-cipher:1.4.classpath"/>
+    <path refid="library.maven:_org.apache.maven.wagon:wagon-provider-api:1.0-beta-7.classpath"/>
+    <path refid="library.maven:_org.apache.maven.wagon:wagon-file:1.0-beta-7.classpath"/>
+    <path refid="library.maven:_org.apache.maven.wagon:wagon-http-lightweight:1.0-beta-7.classpath"/>
+    <path refid="library.maven:_org.apache.maven.wagon:wagon-http-shared:1.0-beta-7.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.1.1.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.container:undertow-embedded:1.0.0.alpha2.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.container:shrinkwrap-container-undertow:1.0.0.alpha2.classpath"/>
+    <path refid="library.maven:_io.undertow:undertow-core:1.0.0.cr5.classpath"/>
+    <path refid="library.maven:_org.jboss.logging:jboss-logging:3.1.4.ga.classpath"/>
+    <path refid="library.maven:_org.jboss.xnio:xnio-api:3.2.0.final.classpath"/>
+    <path refid="library.maven:_org.jboss.xnio:xnio-nio:3.2.0.final.classpath"/>
+    <path refid="library.maven:_io.undertow:undertow-servlet:1.0.0.cr5.classpath"/>
+    <path refid="library.maven:_org.jboss.spec.javax.servlet:jboss-servlet-api_3.1_spec:1.0.0.final.classpath"/>
+    <path refid="library.maven:_org.jboss.spec.javax.annotation:jboss-annotations-api_1.2_spec:1.0.0.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.container:arquillian-container-spi:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.core:arquillian-core-spi:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.core:arquillian-core-api:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.config:arquillian-config-api:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.config:arquillian-config-impl-base:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-spi:2.0.0-alpha-3.classpath"/>
+    <path refid="library.maven:_org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-api-base:2.0.0-alpha-3.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.container:arquillian-container-test-spi:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.container:arquillian-container-test-api:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.testenricher:arquillian-testenricher-initialcontext:1.1.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.junit:arquillian-junit-core:1.2.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.test:arquillian-test-spi:1.2.1.final.classpath"/>
+    <path refid="library.maven:_org.jboss.arquillian.test:arquillian-test-api:1.2.1.final.classpath"/>
+    <path refid="library.maven:_junit:junit:4.11.classpath"/>
+    <path refid="library.maven:_org.hamcrest:hamcrest-core:1.3.classpath"/>
+    <path refid="library.org,bklab.ssh2.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.brodericksftp">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.brodericksftp">
+    <patternset refid="excluded.from.module.brodericksftp"/>
+  </patternset>
+  
+  <path id="brodericksftp.module.sourcepath">
+    <dirset dir="${module.brodericksftp.basedir}">
+      <include name="src/main/java"/>
+      <include name="src/main/resources"/>
+    </dirset>
+  </path>
+  
+  <path id="brodericksftp.module.test.sourcepath">
+    <dirset dir="${module.brodericksftp.basedir}">
+      <include name="src/test/java"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.brodericksftp" depends="compile.module.brodericksftp.production,compile.module.brodericksftp.tests" description="Compile module BroderickSftp"/>
+  
+  <target name="compile.module.brodericksftp.production" depends="register.custom.compilers" description="Compile module BroderickSftp; production classes">
+    <mkdir dir="${brodericksftp.output.dir}"/>
+    <javac2 destdir="${brodericksftp.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.brodericksftp}/javac">
+      <compilerarg line="${compiler.args.brodericksftp}"/>
+      <bootclasspath refid="brodericksftp.module.bootclasspath"/>
+      <classpath refid="brodericksftp.module.production.classpath"/>
+      <src refid="brodericksftp.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.brodericksftp"/>
+    </javac2>
+    
+    <copy todir="${brodericksftp.output.dir}">
+      <fileset dir="${module.brodericksftp.basedir}/src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.brodericksftp.basedir}/src/main/resources">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.brodericksftp.tests" depends="register.custom.compilers,compile.module.brodericksftp.production" description="compile module BroderickSftp; test classes" unless="skip.tests">
+    <mkdir dir="${brodericksftp.testoutput.dir}"/>
+    <javac2 destdir="${brodericksftp.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.brodericksftp}/javac">
+      <compilerarg line="${compiler.args.brodericksftp}"/>
+      <bootclasspath refid="brodericksftp.module.bootclasspath"/>
+      <classpath refid="brodericksftp.module.classpath"/>
+      <src refid="brodericksftp.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.brodericksftp"/>
+    </javac2>
+    
+    <copy todir="${brodericksftp.testoutput.dir}">
+      <fileset dir="${module.brodericksftp.basedir}/src/test/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.brodericksftp" description="cleanup module">
+    <delete dir="${brodericksftp.output.dir}"/>
+    <delete dir="${brodericksftp.testoutput.dir}"/>
+  </target>
+</project>

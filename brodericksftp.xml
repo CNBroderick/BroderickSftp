@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="brodericksftp" default="all">
+  
+  
+  <property file="brodericksftp.properties"/>
+  <!-- Uncomment the following property if no tests compilation is needed -->
+  <!-- 
+  <property name="skip.tests" value="true"/>
+   -->
+  
+  <!-- Compiler options -->
+  
+  <property name="compiler.debug" value="on"/>
+  <property name="compiler.generate.no.warnings" value="off"/>
+  <property name="compiler.args" value=""/>
+  <property name="compiler.max.memory" value="700m"/>
+  <patternset id="ignored.files">
+    <exclude name="**/*.hprof/**"/>
+    <exclude name="**/*.pyc/**"/>
+    <exclude name="**/*.pyo/**"/>
+    <exclude name="**/*.rbc/**"/>
+    <exclude name="**/*.yarb/**"/>
+    <exclude name="**/*~/**"/>
+    <exclude name="**/.DS_Store/**"/>
+    <exclude name="**/.git/**"/>
+    <exclude name="**/.hg/**"/>
+    <exclude name="**/.svn/**"/>
+    <exclude name="**/CVS/**"/>
+    <exclude name="**/__pycache__/**"/>
+    <exclude name="**/_svn/**"/>
+    <exclude name="**/vssver.scc/**"/>
+    <exclude name="**/vssver2.scc/**"/>
+  </patternset>
+  <patternset id="library.patterns">
+    <include name="*.egg"/>
+    <include name="*.jar"/>
+    <include name="*.ear"/>
+    <include name="*.swc"/>
+    <include name="*.war"/>
+    <include name="*.zip"/>
+    <include name="*.ane"/>
+  </patternset>
+  <patternset id="compiler.resources">
+    <exclude name="**/?*.java"/>
+    <exclude name="**/?*.form"/>
+    <exclude name="**/?*.class"/>
+    <exclude name="**/?*.groovy"/>
+    <exclude name="**/?*.scala"/>
+    <exclude name="**/?*.flex"/>
+    <exclude name="**/?*.kt"/>
+    <exclude name="**/?*.clj"/>
+    <exclude name="**/?*.aj"/>
+  </patternset>
+  
+  <!-- JDK definitions -->
+  
+  <property name="jdk.bin.9" value="${jdk.home.9}/bin"/>
+  <path id="jdk.classpath.9">
+    <fileset dir="${jdk.home.9}">
+      <include name="../jdk-9!/java.activation"/>
+      <include name="../jdk-9!/java.base"/>
+      <include name="../jdk-9!/java.compiler"/>
+      <include name="../jdk-9!/java.corba"/>
+      <include name="../jdk-9!/java.datatransfer"/>
+      <include name="../jdk-9!/java.desktop"/>
+      <include name="../jdk-9!/java.instrument"/>
+      <include name="../jdk-9!/java.jnlp"/>
+      <include name="../jdk-9!/java.logging"/>
+      <include name="../jdk-9!/java.management"/>
+      <include name="../jdk-9!/java.management.rmi"/>
+      <include name="../jdk-9!/java.naming"/>
+      <include name="../jdk-9!/java.prefs"/>
+      <include name="../jdk-9!/java.rmi"/>
+      <include name="../jdk-9!/java.scripting"/>
+      <include name="../jdk-9!/java.se"/>
+      <include name="../jdk-9!/java.se.ee"/>
+      <include name="../jdk-9!/java.security.jgss"/>
+      <include name="../jdk-9!/java.security.sasl"/>
+      <include name="../jdk-9!/java.smartcardio"/>
+      <include name="../jdk-9!/java.sql"/>
+      <include name="../jdk-9!/java.sql.rowset"/>
+      <include name="../jdk-9!/java.transaction"/>
+      <include name="../jdk-9!/java.xml"/>
+      <include name="../jdk-9!/java.xml.bind"/>
+      <include name="../jdk-9!/java.xml.crypto"/>
+      <include name="../jdk-9!/java.xml.ws"/>
+      <include name="../jdk-9!/java.xml.ws.annotation"/>
+      <include name="../jdk-9!/javafx.base"/>
+      <include name="../jdk-9!/javafx.controls"/>
+      <include name="../jdk-9!/javafx.deploy"/>
+      <include name="../jdk-9!/javafx.fxml"/>
+      <include name="../jdk-9!/javafx.graphics"/>
+      <include name="../jdk-9!/javafx.media"/>
+      <include name="../jdk-9!/javafx.swing"/>
+      <include name="../jdk-9!/javafx.web"/>
+      <include name="../jdk-9!/jdk.accessibility"/>
+      <include name="../jdk-9!/jdk.attach"/>
+      <include name="../jdk-9!/jdk.charsets"/>
+      <include name="../jdk-9!/jdk.compiler"/>
+      <include name="../jdk-9!/jdk.crypto.cryptoki"/>
+      <include name="../jdk-9!/jdk.crypto.ec"/>
+      <include name="../jdk-9!/jdk.crypto.mscapi"/>
+      <include name="../jdk-9!/jdk.deploy"/>
+      <include name="../jdk-9!/jdk.deploy.controlpanel"/>
+      <include name="../jdk-9!/jdk.dynalink"/>
+      <include name="../jdk-9!/jdk.editpad"/>
+      <include name="../jdk-9!/jdk.hotspot.agent"/>
+      <include name="../jdk-9!/jdk.httpserver"/>
+      <include name="../jdk-9!/jdk.incubator.httpclient"/>
+      <include name="../jdk-9!/jdk.internal.ed"/>
+      <include name="../jdk-9!/jdk.internal.jvmstat"/>
+      <include name="../jdk-9!/jdk.internal.le"/>
+      <include name="../jdk-9!/jdk.internal.opt"/>
+      <include name="../jdk-9!/jdk.internal.vm.ci"/>
+      <include name="../jdk-9!/jdk.jartool"/>
+      <include name="../jdk-9!/jdk.javadoc"/>
+      <include name="../jdk-9!/jdk.javaws"/>
+      <include name="../jdk-9!/jdk.jcmd"/>
+      <include name="../jdk-9!/jdk.jconsole"/>
+      <include name="../jdk-9!/jdk.jdeps"/>
+      <include name="../jdk-9!/jdk.jdi"/>
+      <include name="../jdk-9!/jdk.jdwp.agent"/>
+      <include name="../jdk-9!/jdk.jfr"/>
+      <include name="../jdk-9!/jdk.jlink"/>
+      <include name="../jdk-9!/jdk.jshell"/>
+      <include name="../jdk-9!/jdk.jsobject"/>
+      <include name="../jdk-9!/jdk.jstatd"/>
+      <include name="../jdk-9!/jdk.localedata"/>
+      <include name="../jdk-9!/jdk.management"/>
+      <include name="../jdk-9!/jdk.management.agent"/>
+      <include name="../jdk-9!/jdk.management.cmm"/>
+      <include name="../jdk-9!/jdk.management.jfr"/>
+      <include name="../jdk-9!/jdk.management.resource"/>
+      <include name="../jdk-9!/jdk.naming.dns"/>
+      <include name="../jdk-9!/jdk.naming.rmi"/>
+      <include name="../jdk-9!/jdk.net"/>
+      <include name="../jdk-9!/jdk.pack"/>
+      <include name="../jdk-9!/jdk.packager"/>
+      <include name="../jdk-9!/jdk.packager.services"/>
+      <include name="../jdk-9!/jdk.plugin"/>
+      <include name="../jdk-9!/jdk.plugin.dom"/>
+      <include name="../jdk-9!/jdk.plugin.server"/>
+      <include name="../jdk-9!/jdk.policytool"/>
+      <include name="../jdk-9!/jdk.rmic"/>
+      <include name="../jdk-9!/jdk.scripting.nashorn"/>
+      <include name="../jdk-9!/jdk.scripting.nashorn.shell"/>
+      <include name="../jdk-9!/jdk.sctp"/>
+      <include name="../jdk-9!/jdk.security.auth"/>
+      <include name="../jdk-9!/jdk.security.jgss"/>
+      <include name="../jdk-9!/jdk.snmp"/>
+      <include name="../jdk-9!/jdk.unsupported"/>
+      <include name="../jdk-9!/jdk.xml.bind"/>
+      <include name="../jdk-9!/jdk.xml.dom"/>
+      <include name="../jdk-9!/jdk.xml.ws"/>
+      <include name="../jdk-9!/jdk.zipfs"/>
+      <include name="../jdk-9!/oracle.desktop"/>
+      <include name="../jdk-9!/oracle.net"/>
+    </fileset>
+  </path>
+  
+  <property name="project.jdk.home" value="${jdk.home.9}"/>
+  <property name="project.jdk.bin" value="${jdk.bin.9}"/>
+  <property name="project.jdk.classpath" value="jdk.classpath.9"/>
+  
+  
+  <!-- Project Libraries -->
+  
+  <path id="library.maven:_com.google.collections:google-collections:1.0.classpath">
+    <pathelement location="${path.variable.maven_repository}/com/google/collections/google-collections/1.0/google-collections-1.0.jar"/>
+  </path>
+  
+  <path id="library.maven:_com.miglayout:miglayout-core:5.0.classpath">
+    <pathelement location="${path.variable.maven_repository}/com/miglayout/miglayout-core/5.0/miglayout-core-5.0.jar"/>
+  </path>
+  
+  <path id="library.maven:_com.miglayout:miglayout-swing:5.0.classpath">
+    <pathelement location="${path.variable.maven_repository}/com/miglayout/miglayout-swing/5.0/miglayout-swing-5.0.jar"/>
+  </path>
+  
+  <path id="library.maven:_commons-io:commons-io:2.6.classpath">
+    <pathelement location="${path.variable.maven_repository}/commons-io/commons-io/2.6/commons-io-2.6.jar"/>
+  </path>
+  
+  <path id="library.maven:_commons-logging:commons-logging-api:1.1.classpath">
+    <pathelement location="${path.variable.maven_repository}/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar"/>
+  </path>
+  
+  <path id="library.maven:_commons-logging:commons-logging:1.1.1.classpath">
+    <pathelement location="${path.variable.maven_repository}/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
+  </path>
+  
+  <path id="library.maven:_dom4j:dom4j:1.6.1.classpath">
+    <pathelement location="${path.variable.maven_repository}/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar"/>
+  </path>
+  
+  <path id="library.maven:_io.undertow:undertow-core:1.0.0.cr5.classpath">
+    <pathelement location="${path.variable.maven_repository}/io/undertow/undertow-core/1.0.0.CR5/undertow-core-1.0.0.CR5.jar"/>
+  </path>
+  
+  <path id="library.maven:_io.undertow:undertow-servlet:1.0.0.cr5.classpath">
+    <pathelement location="${path.variable.maven_repository}/io/undertow/undertow-servlet/1.0.0.CR5/undertow-servlet-1.0.0.CR5.jar"/>
+  </path>
+  
+  <path id="library.maven:_junit:junit:4.11.classpath">
+    <pathelement location="${path.variable.maven_repository}/junit/junit/4.11/junit-4.11.jar"/>
+  </path>
+  
+  <path id="library.maven:_log4j:log4j:1.2.12.classpath">
+    <pathelement location="${path.variable.maven_repository}/log4j/log4j/1.2.12/log4j-1.2.12.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.apache.commons:commons-lang3:3.7.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.apache.maven.wagon:wagon-file:1.0-beta-7.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/apache/maven/wagon/wagon-file/1.0-beta-7/wagon-file-1.0-beta-7.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.apache.maven.wagon:wagon-http-lightweight:1.0-beta-7.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/apache/maven/wagon/wagon-http-lightweight/1.0-beta-7/wagon-http-lightweight-1.0-beta-7.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.apache.maven.wagon:wagon-http-shared:1.0-beta-7.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/apache/maven/wagon/wagon-http-shared/1.0-beta-7/wagon-http-shared-1.0-beta-7.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.apache.maven.wagon:wagon-provider-api:1.0-beta-7.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/apache/maven/wagon/wagon-provider-api/1.0-beta-7/wagon-provider-api-1.0-beta-7.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.apache.maven:maven-aether-provider:3.0.1.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/apache/maven/maven-aether-provider/3.0.1/maven-aether-provider-3.0.1.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.apache.maven:maven-model-builder:3.0.1.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/apache/maven/maven-model-builder/3.0.1/maven-model-builder-3.0.1.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.apache.maven:maven-model:3.0.1.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/apache/maven/maven-model/3.0.1/maven-model-3.0.1.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.apache.maven:maven-repository-metadata:3.0.1.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/apache/maven/maven-repository-metadata/3.0.1/maven-repository-metadata-3.0.1.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.apache.maven:maven-settings-builder:3.0.1.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/apache/maven/maven-settings-builder/3.0.1/maven-settings-builder-3.0.1.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.apache.maven:maven-settings:3.0.1.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/apache/maven/maven-settings/3.0.1/maven-settings-3.0.1.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.apache.xbean:xbean-reflect:3.4.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.codehaus.plexus:plexus-classworlds:2.2.2.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.codehaus.plexus:plexus-component-annotations:1.5.5.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.codehaus.plexus:plexus-container-default:1.5.5.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.codehaus.plexus:plexus-interpolation:1.14.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.codehaus.plexus:plexus-utils:2.0.4.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/codehaus/plexus/plexus-utils/2.0.4/plexus-utils-2.0.4.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.hamcrest:hamcrest-core:1.3.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.arquillian.config:arquillian-config-api:1.1.1.final.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/arquillian/config/arquillian-config-api/1.1.1.Final/arquillian-config-api-1.1.1.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.arquillian.config:arquillian-config-impl-base:1.1.1.final.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/arquillian/config/arquillian-config-impl-base/1.1.1.Final/arquillian-config-impl-base-1.1.1.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.arquillian.container:arquillian-container-spi:1.1.1.final.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/arquillian/container/arquillian-container-spi/1.1.1.Final/arquillian-container-spi-1.1.1.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.arquillian.container:arquillian-container-test-api:1.1.1.final.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/arquillian/container/arquillian-container-test-api/1.1.1.Final/arquillian-container-test-api-1.1.1.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.arquillian.container:arquillian-container-test-spi:1.1.1.final.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/arquillian/container/arquillian-container-test-spi/1.1.1.Final/arquillian-container-test-spi-1.1.1.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.arquillian.container:shrinkwrap-container-undertow:1.0.0.alpha2.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/arquillian/container/shrinkwrap-container-undertow/1.0.0.Alpha2/shrinkwrap-container-undertow-1.0.0.Alpha2.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.arquillian.container:undertow-embedded:1.0.0.alpha2.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/arquillian/container/undertow-embedded/1.0.0.Alpha2/undertow-embedded-1.0.0.Alpha2.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.arquillian.core:arquillian-core-api:1.1.1.final.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/arquillian/core/arquillian-core-api/1.1.1.Final/arquillian-core-api-1.1.1.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.arquillian.core:arquillian-core-spi:1.1.1.final.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/arquillian/core/arquillian-core-spi/1.1.1.Final/arquillian-core-spi-1.1.1.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.arquillian.junit:arquillian-junit-core:1.2.1.final.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/arquillian/junit/arquillian-junit-core/1.2.1.Final/arquillian-junit-core-1.2.1.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.arquillian.test:arquillian-test-api:1.2.1.final.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/arquillian/test/arquillian-test-api/1.2.1.Final/arquillian-test-api-1.2.1.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.arquillian.test:arquillian-test-spi:1.2.1.final.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/arquillian/test/arquillian-test-spi/1.2.1.Final/arquillian-test-spi-1.2.1.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.arquillian.testenricher:arquillian-testenricher-initialcontext:1.1.1.final.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/arquillian/testenricher/arquillian-testenricher-initialcontext/1.1.1.Final/arquillian-testenricher-initialcontext-1.1.1.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.arquillian:arquillian-api:1.0.0.alpha5.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/arquillian/arquillian-api/1.0.0.Alpha5/arquillian-api-1.0.0.Alpha5.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.arquillian:arquillian-impl-base:1.0.0.alpha5.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/arquillian/arquillian-impl-base/1.0.0.Alpha5/arquillian-impl-base-1.0.0.Alpha5.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.arquillian:arquillian-spi:1.0.0.alpha5.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/arquillian/arquillian-spi/1.0.0.Alpha5/arquillian-spi-1.0.0.Alpha5.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.arquillian:arquillian-testng:1.0.0.alpha5.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/arquillian/arquillian-testng/1.0.0.Alpha5/arquillian-testng-1.0.0.Alpha5.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.logging:jboss-logging:3.1.4.ga.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/logging/jboss-logging/3.1.4.GA/jboss-logging-3.1.4.GA.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-api-base:2.0.0-alpha-3.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-api-base/2.0.0-alpha-3/shrinkwrap-descriptors-api-base-2.0.0-alpha-3.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-api:0.1.4.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-api/0.1.4/shrinkwrap-descriptors-api-0.1.4.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-spi:2.0.0-alpha-3.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-spi/2.0.0-alpha-3/shrinkwrap-descriptors-spi-2.0.0-alpha-3.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api-maven:1.0.0-alpha-12.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-api-maven/1.0.0-alpha-12/shrinkwrap-resolver-api-maven-1.0.0-alpha-12.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api:1.0.0-alpha-12.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-api/1.0.0-alpha-12/shrinkwrap-resolver-api-1.0.0-alpha-12.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-impl-maven:1.0.0-alpha-12.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-impl-maven/1.0.0-alpha-12/shrinkwrap-resolver-impl-maven-1.0.0-alpha-12.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.shrinkwrap:shrinkwrap-api:1.0.0-alpha-12.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/shrinkwrap/shrinkwrap-api/1.0.0-alpha-12/shrinkwrap-api-1.0.0-alpha-12.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.shrinkwrap:shrinkwrap-impl-base:1.0.0-alpha-12.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/shrinkwrap/shrinkwrap-impl-base/1.0.0-alpha-12/shrinkwrap-impl-base-1.0.0-alpha-12.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.shrinkwrap:shrinkwrap-spi:1.0.0-alpha-12.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/shrinkwrap/shrinkwrap-spi/1.0.0-alpha-12/shrinkwrap-spi-1.0.0-alpha-12.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.spec.javax.annotation:jboss-annotations-api_1.2_spec:1.0.0.final.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/spec/javax/annotation/jboss-annotations-api_1.2_spec/1.0.0.Final/jboss-annotations-api_1.2_spec-1.0.0.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.spec.javax.servlet:jboss-servlet-api_3.1_spec:1.0.0.final.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/spec/javax/servlet/jboss-servlet-api_3.1_spec/1.0.0.Final/jboss-servlet-api_3.1_spec-1.0.0.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.xnio:xnio-api:3.2.0.final.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/xnio/xnio-api/3.2.0.Final/xnio-api-3.2.0.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.xnio:xnio-nio:3.2.0.final.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/jboss/xnio/xnio-nio/3.2.0.Final/xnio-nio-3.2.0.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.sonatype.aether:aether-api:1.8.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/sonatype/aether/aether-api/1.8/aether-api-1.8.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.sonatype.aether:aether-connector-wagon:1.8.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/sonatype/aether/aether-connector-wagon/1.8/aether-connector-wagon-1.8.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.sonatype.aether:aether-impl:1.8.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/sonatype/aether/aether-impl/1.8/aether-impl-1.8.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.sonatype.aether:aether-spi:1.8.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/sonatype/aether/aether-spi/1.8/aether-spi-1.8.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.sonatype.aether:aether-util:1.8.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/sonatype/aether/aether-util/1.8/aether-util-1.8.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.sonatype.plexus:plexus-cipher:1.4.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.sonatype.plexus:plexus-sec-dispatcher:1.3.classpath">
+    <pathelement location="${path.variable.maven_repository}/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar"/>
+  </path>
+  
+  <path id="library.maven:_xml-apis:xml-apis:1.0.b2.classpath">
+    <pathelement location="${path.variable.maven_repository}/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar"/>
+  </path>
+  
+  <path id="library.org,bklab.ssh2.classpath">
+    <pathelement location="/lib/org.bklab.ssh2.jar"/>
+  </path>
+  <!-- Register Custom Compiler Taskdefs -->
+  <property name="javac2.home" value="${idea.home}/lib"/>
+  <path id="javac2.classpath">
+    <pathelement location="${javac2.home}/javac2.jar"/>
+    <pathelement location="${javac2.home}/jdom.jar"/>
+    <pathelement location="${javac2.home}/asm-all.jar"/>
+    <pathelement location="${javac2.home}/jgoodies-forms.jar"/>
+  </path>
+  <target name="register.custom.compilers">
+    <taskdef name="javac2" classname="com.intellij.ant.Javac2" classpathref="javac2.classpath"/>
+    <taskdef name="instrumentIdeaExtensions" classname="com.intellij.ant.InstrumentIdeaExtensions" classpathref="javac2.classpath"/>
+  </target>
+  
+  <!-- Modules -->
+  
+  <import file="${basedir}/module_brodericksftp.xml"/>
+  
+  <target name="init" description="Build initialization">
+    <!-- Perform any build initialization in this target -->
+  </target>
+  
+  <target name="clean" depends="clean.module.brodericksftp" description="cleanup all"/>
+  
+  <target name="build.modules" depends="init, clean, compile.module.brodericksftp" description="build all modules"/>
+  
+  <target name="init.artifacts">
+    <property name="artifacts.temp.dir" value="${basedir}/__artifacts_temp"/>
+    <property name="artifact.output.brodericksftp:jar" value="${basedir}/out/artifacts/BroderickSftp_jar"/>
+    <mkdir dir="${artifacts.temp.dir}"/>
+    <property name="temp.jar.path.BroderickSftp.jar" value="${artifacts.temp.dir}/BroderickSftp.jar"/>
+  </target>
+  
+  <target name="artifact.brodericksftp:jar" depends="init.artifacts, compile.module.brodericksftp" description="Build &#39;BroderickSftp:jar&#39; artifact">
+    <property name="artifact.temp.output.brodericksftp:jar" value="${artifacts.temp.dir}/BroderickSftp_jar"/>
+    <mkdir dir="${artifact.temp.output.brodericksftp:jar}"/>
+    <jar destfile="${temp.jar.path.BroderickSftp.jar}" duplicate="preserve" filesetmanifest="mergewithoutmain">
+      <zipfileset dir="${brodericksftp.output.dir}"/>
+      <zipfileset src="${path.variable.maven_repository}/com/miglayout/miglayout-swing/5.0/miglayout-swing-5.0.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/sonatype/aether/aether-impl/1.8/aether-impl-1.8.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/codehaus/plexus/plexus-utils/2.0.4/plexus-utils-2.0.4.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/arquillian/test/arquillian-test-spi/1.2.1.Final/arquillian-test-spi-1.2.1.Final.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/arquillian/container/arquillian-container-spi/1.1.1.Final/arquillian-container-spi-1.1.1.Final.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/sonatype/aether/aether-connector-wagon/1.8/aether-connector-wagon-1.8.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/arquillian/config/arquillian-config-api/1.1.1.Final/arquillian-config-api-1.1.1.Final.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-impl-maven/1.0.0-alpha-12/shrinkwrap-resolver-impl-maven-1.0.0-alpha-12.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/arquillian/core/arquillian-core-spi/1.1.1.Final/arquillian-core-spi-1.1.1.Final.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/arquillian/arquillian-testng/1.0.0.Alpha5/arquillian-testng-1.0.0.Alpha5.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/apache/maven/wagon/wagon-http-shared/1.0-beta-7/wagon-http-shared-1.0-beta-7.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/arquillian/config/arquillian-config-impl-base/1.1.1.Final/arquillian-config-impl-base-1.1.1.Final.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/apache/maven/maven-repository-metadata/3.0.1/maven-repository-metadata-3.0.1.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/shrinkwrap/shrinkwrap-api/1.0.0-alpha-12/shrinkwrap-api-1.0.0-alpha-12.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/apache/maven/wagon/wagon-http-lightweight/1.0-beta-7/wagon-http-lightweight-1.0-beta-7.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/logging/jboss-logging/3.1.4.GA/jboss-logging-3.1.4.GA.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-api-maven/1.0.0-alpha-12/shrinkwrap-resolver-api-maven-1.0.0-alpha-12.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/xnio/xnio-nio/3.2.0.Final/xnio-nio-3.2.0.Final.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/arquillian/container/arquillian-container-test-spi/1.1.1.Final/arquillian-container-test-spi-1.1.1.Final.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/com/miglayout/miglayout-core/5.0/miglayout-core-5.0.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/apache/maven/maven-model/3.0.1/maven-model-3.0.1.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/sonatype/aether/aether-spi/1.8/aether-spi-1.8.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-api/0.1.4/shrinkwrap-descriptors-api-0.1.4.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/shrinkwrap/shrinkwrap-spi/1.0.0-alpha-12/shrinkwrap-spi-1.0.0-alpha-12.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-api/1.0.0-alpha-12/shrinkwrap-resolver-api-1.0.0-alpha-12.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/arquillian/container/shrinkwrap-container-undertow/1.0.0.Alpha2/shrinkwrap-container-undertow-1.0.0.Alpha2.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/arquillian/core/arquillian-core-api/1.1.1.Final/arquillian-core-api-1.1.1.Final.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/xnio/xnio-api/3.2.0.Final/xnio-api-3.2.0.Final.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/apache/maven/wagon/wagon-file/1.0-beta-7/wagon-file-1.0-beta-7.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/io/undertow/undertow-core/1.0.0.CR5/undertow-core-1.0.0.CR5.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-api-base/2.0.0-alpha-3/shrinkwrap-descriptors-api-base-2.0.0-alpha-3.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/apache/maven/wagon/wagon-provider-api/1.0-beta-7/wagon-provider-api-1.0-beta-7.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/spec/javax/annotation/jboss-annotations-api_1.2_spec/1.0.0.Final/jboss-annotations-api_1.2_spec-1.0.0.Final.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/shrinkwrap/shrinkwrap-impl-base/1.0.0-alpha-12/shrinkwrap-impl-base-1.0.0-alpha-12.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/apache/maven/maven-settings-builder/3.0.1/maven-settings-builder-3.0.1.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/commons-io/commons-io/2.6/commons-io-2.6.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/sonatype/aether/aether-api/1.8/aether-api-1.8.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/com/google/collections/google-collections/1.0/google-collections-1.0.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/apache/maven/maven-model-builder/3.0.1/maven-model-builder-3.0.1.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/apache/maven/maven-aether-provider/3.0.1/maven-aether-provider-3.0.1.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/arquillian/arquillian-api/1.0.0.Alpha5/arquillian-api-1.0.0.Alpha5.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/log4j/log4j/1.2.12/log4j-1.2.12.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/arquillian/container/arquillian-container-test-api/1.1.1.Final/arquillian-container-test-api-1.1.1.Final.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/sonatype/aether/aether-util/1.8/aether-util-1.8.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/arquillian/arquillian-impl-base/1.0.0.Alpha5/arquillian-impl-base-1.0.0.Alpha5.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/io/undertow/undertow-servlet/1.0.0.CR5/undertow-servlet-1.0.0.CR5.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/arquillian/container/undertow-embedded/1.0.0.Alpha2/undertow-embedded-1.0.0.Alpha2.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/arquillian/arquillian-spi/1.0.0.Alpha5/arquillian-spi-1.0.0.Alpha5.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/arquillian/testenricher/arquillian-testenricher-initialcontext/1.1.1.Final/arquillian-testenricher-initialcontext-1.1.1.Final.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/apache/maven/maven-settings/3.0.1/maven-settings-3.0.1.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/arquillian/junit/arquillian-junit-core/1.2.1.Final/arquillian-junit-core-1.2.1.Final.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-spi/2.0.0-alpha-3/shrinkwrap-descriptors-spi-2.0.0-alpha-3.jar"/>
+      <zipfileset src="/lib/org.bklab.ssh2.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/arquillian/test/arquillian-test-api/1.2.1.Final/arquillian-test-api-1.2.1.Final.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/jboss/spec/javax/servlet/jboss-servlet-api_3.1_spec/1.0.0.Final/jboss-servlet-api_3.1_spec-1.0.0.Final.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar"/>
+    </jar>
+    <copy file="${temp.jar.path.BroderickSftp.jar}" tofile="${artifact.temp.output.brodericksftp:jar}/BroderickSftp.jar"/>
+  </target>
+  
+  <target name="build.all.artifacts" depends="artifact.brodericksftp:jar" description="Build all artifacts">
+    <mkdir dir="${artifact.output.brodericksftp:jar}"/>
+    <copy todir="${artifact.output.brodericksftp:jar}">
+      <fileset dir="${artifact.temp.output.brodericksftp:jar}"/>
+    </copy>
+    
+    <!-- Delete temporary files -->
+    <delete dir="${artifacts.temp.dir}"/>
+  </target>
+  
+  <target name="all" depends="build.modules, build.all.artifacts" description="build all"/>
+</project>
