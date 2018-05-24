@@ -50,6 +50,7 @@ public class SftpPanel extends GroupedTabPanel implements ActionListener {
         toolbar.setOpaque(false);
         toolbar.setFloatable(false);
 
+        buttonNewtworkQueue = new JToggleButton();
         buttonNewtworkQueue.setOpaque(false);
         buttonNewtworkQueue.setToolTipText("Network queue");
         buttonNewtworkQueue.setActionCommand("networkQueue");
