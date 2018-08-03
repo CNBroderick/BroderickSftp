@@ -29,9 +29,23 @@
 ## MAVEN 依赖
 
 ```xml
-  <dependency>
-    <groupId>org.apache.ant</groupId>
-    <artifactId>ant</artifactId>
-    <version>1.10.3</version>
-  </dependency>
+   <dependencies>
+        <dependency>
+            <!-- Ant-core -->
+            <groupId>org.apache.ant</groupId>
+            <artifactId>ant</artifactId>
+            <version>1.10.5</version>
+        </dependency>
+        <!-- Using for scp(SFTP) -->
+        <dependency>
+            <groupId>org.apache.ant</groupId>
+            <artifactId>ant-jsch</artifactId>
+            <version>1.8.1</version>
+        </dependency>
+   </dependencies>
+
 ```
+
+## 新版设置工作目录
+
+   AntExecutor.create().setWorkingPath("E:\\Broderick Developments\\libs").execute();
